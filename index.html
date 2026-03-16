@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أحمد محمد السيد | مبرمج ومصمم محترف</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-x-hidden">
+
+    <div id="ai-widget">
+        <div id="ai-chat-box" class="glass shadow-2xl border-sky-500/30 flex flex-col mb-4 hidden">
+            <div class="p-4 bg-sky-500/20 border-b border-white/10 flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>
+                    <span class="font-bold">مساعد أحمد الذكي ✨</span>
+                </div>
+                <button id="close-ai" class="text-white/50 hover:text-white"><i data-lucide="x"></i></button>
+            </div>
+            <div id="chat-content" class="flex-1 p-4 overflow-y-auto space-y-4 text-sm scroll-smooth min-h-[300px] max-h-[400px]">
+                <div class="bg-white/5 p-3 rounded-2xl border border-white/10 ml-8 text-slate-300">
+                    أهلاً بك! أنا المساعد الذكي لأحمد. كيف يمكنني مساعدتك اليوم؟
+                </div>
+            </div>
+            <div class="p-4 border-t border-white/10 bg-black/20">
+                <div class="flex gap-2">
+                    <input type="text" id="ai-input" placeholder="اسألني أي شيء..." class="bg-white/5 border border-white/10 rounded-xl px-4 py-2 flex-1 focus:outline-none focus:border-sky-500 transition text-white">
+                    <button id="send-ai" class="bg-sky-500 text-white p-2 rounded-xl hover:bg-sky-600 transition"><i data-lucide="send"></i></button>
+                </div>
+            </div>
+        </div>
+        <button id="toggle-ai" class="w-16 h-16 bg-sky-500 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition active:scale-95">
+            <i data-lucide="sparkles" class="text-white w-8 h-8"></i>
+        </button>
+    </div>
+
+    <nav class="fixed top-0 w-full z-50 p-4 md:p-6">
+        <div class="max-w-7xl mx-auto glass flex justify-between items-center px-8 py-4">
+            <div class="text-2xl font-black text-gradient tracking-tighter">أحمد السيد</div>
+            <div class="hidden md:flex gap-10 font-bold text-sm">
+                <a href="#home" class="nav-link">الرئيسية</a>
+                <a href="#about" class="nav-link">من نحن</a>
+                <a href="#services" class="nav-link">خدماتي</a>
+                <a href="#portfolio" class="nav-link">أعمالي</a>
+            </div>
+            <a href="https://wa.me/201080023702" target="_blank" class="bg-sky-500 text-white px-6 py-2 rounded-xl font-bold">اتصل بي</a>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+        <div class="reveal active">
+            <h1 class="text-5xl md:text-8xl font-black mb-8 leading-tight">
+                المبرمج والمصمم <br> <span class="text-gradient">أحمد محمد السيد</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-slate-400 max-w-3xl mx-auto mb-12 font-light">
+                خبير في بناء المواقع التفاعلية وأنظمة الحجوزات الذكية بأحدث التقنيات.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#portfolio" class="bg-white text-slate-900 px-10 py-5 rounded-2xl font-black shadow-2xl hover:bg-sky-400 hover:text-white transition">معرض الأعمال</a>
+                <a href="https://wa.me/201080023702" class="glass px-10 py-5 rounded-2xl font-black border-white/10 hover:bg-white/5 transition">واتساب مباشر</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div class="reveal">
+                <div class="glass p-4 rounded-[3rem] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop" class="rounded-[2.5rem] w-full">
+                </div>
+            </div>
+            <div class="reveal">
+                <h2 class="text-4xl font-black mb-8 text-gradient italic">عن المبرمج أحمد</h2>
+                <p class="text-xl text-slate-400 leading-relaxed mb-8">
+                    متخصص في تحويل الأفكار إلى واقع رقمي مبهر. خبرة في HTML, CSS, JavaScript وبناء المتاجر الإلكترونية وأنظمة الحجوزات المعقدة.
+                </p>
+                <div class="flex gap-4">
+                    <div class="glass p-6 rounded-2xl flex-1 text-center">
+                        <i data-lucide="code" class="mx-auto mb-2 text-sky-400"></i>
+                        <span class="font-bold">برمجة</span>
+                    </div>
+                    <div class="glass p-6 rounded-2xl flex-1 text-center">
+                        <i data-lucide="palette" class="mx-auto mb-2 text-purple-400"></i>
+                        <span class="font-bold">تصميم</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-32 px-6 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto text-center mb-16 reveal">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">خدماتي</h2>
+            <p class="text-slate-400">أقدم حلولاً تقنية متكاملة</p>
+        </div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="glass p-10 reveal card-hover">
+                <i data-lucide="calendar" class="w-12 h-12 text-sky-400 mb-6"></i>
+                <h3 class="text-2xl font-bold mb-4">أنظمة الحجوزات</h3>
+                <p class="text-slate-400">مثل موقع حجز تذاكر الأهرامات والعيادات.</p>
+            </div>
+            <div class="glass p-10 reveal card-hover">
+                <i data-lucide="shopping-cart" class="w-12 h-12 text-purple-400 mb-6"></i>
+                <h3 class="text-2xl font-bold mb-4">المتاجر الإلكترونية</h3>
+                <p class="text-slate-400">بناء متاجر احترافية وتفاعلية.</p>
+            </div>
+            <div class="glass p-10 reveal card-hover">
+                <i data-lucide="gauge" class="w-12 h-12 text-emerald-400 mb-6"></i>
+                <h3 class="text-2xl font-bold mb-4">لوحات التحكم</h3>
+                <p class="text-slate-400">تصميم Dashboards لإدارة بياناتك.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-6xl font-black mb-16 text-center reveal">معرض الأعمال</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="glass rounded-[2rem] overflow-hidden reveal relative group">
+                    <img src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?q=80&w=2000" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <h4 class="text-2xl font-bold">حجز تذاكر الأهرامات</h4>
+                    </div>
+                </div>
+                <div class="glass rounded-[2rem] overflow-hidden reveal relative group">
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2000" class="w-full h-80 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                        <h4 class="text-2xl font-bold">موقع نور الإسلام</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center border-t border-white/5">
+        <p class="text-slate-500 font-bold tracking-widest uppercase">
+            تم التطوير بواسطة <span class="text-sky-400">أحمد محمد السيد</span> &copy; 2024
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
